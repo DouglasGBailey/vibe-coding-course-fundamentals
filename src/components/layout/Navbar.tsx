@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
         <Link href="/" className="flex items-center gap-3 text-xl font-bold">
-          <Image src="/logo.png" alt={SITE_NAME} width={40} height={40} className="rounded-lg" />
+          <Image src="/logo.png" alt={SITE_NAME} width={200} height={200} className="rounded-lg" />
           <span className="gradient-text hidden sm:inline">{SITE_NAME}</span>
         </Link>
 

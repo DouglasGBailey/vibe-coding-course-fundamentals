@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="mb-3 flex items-center gap-3">
-              <Image src="/logo.png" alt={SITE_NAME} width={36} height={36} className="rounded-lg" />
+              <Image src="/logo.png" alt={SITE_NAME} width={180} height={180} className="rounded-lg" />
               <h3 className="text-lg font-bold">
                 <span className="gradient-text">{SITE_NAME}</span>
               </h3>
