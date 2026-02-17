@@ -43,7 +43,7 @@ export const pricingTiers: PricingTier[] = [
       "Custom project guidance",
       "Portfolio review & career advice",
       "LinkedIn recommendation",
-      "Lifetime priority support",
+      "1 year priority support",
     ],
     highlighted: false,
     cta: "Go Premium",
