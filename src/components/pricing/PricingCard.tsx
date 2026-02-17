@@ -29,13 +29,21 @@ export default function PricingCard({ tier }: PricingCardProps) {
         <span className="ml-2 text-sm text-muted">{tier.period}</span>
       </div>
 
-      <p className="mb-6 text-sm text-muted">{tier.description}</p>
+      <p className="mb-6 text-sm leading-relaxed text-muted">{tier.description}</p>
 
-      <ul className="mb-8 flex-1 space-y-3">
-        {tier.features.map((feature) => (
-          <li key={feature} className="flex items-start gap-2 text-sm">
-            <span className="mt-0.5 text-accent-purple">✓</span>
-            <span className="text-muted">{feature}</span>
+      <ul className="mb-8 flex-1 space-y-4">
+        {tier.features.map((feature, index) => (
+          <li
+            key={feature}
+            className={clsx(
+              "flex items-start gap-3 text-[15px] leading-snug",
+              index === 0 && tier.features[0].startsWith("Everything") && "pb-3 border-b border-border"
+            )}
+          >
+            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent-purple/15 text-xs text-accent-purple">
+              ✓
+            </span>
+            <span className="text-foreground">{feature}</span>
           </li>
         ))}
       </ul>
