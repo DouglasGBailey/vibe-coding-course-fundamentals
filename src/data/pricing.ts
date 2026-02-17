@@ -23,7 +23,7 @@ export const pricingTiers: PricingTier[] = [
     description: "Everything in Course Only plus personalized 1-on-1 tutoring sessions.",
     features: [
       "Everything in Course Only",
-      "3× one-hour 1-on-1 tutoring sessions",
+      "5× one-hour 1-on-1 tutoring sessions, online",
       "Personalized learning plan",
       "Code review on your projects",
       "Priority email support",
