@@ -6,6 +6,7 @@ export const INSTRUCTOR_NAME = "Douglas Bailey";
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/course", label: "Course" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/tutoring", label: "Tutoring" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
