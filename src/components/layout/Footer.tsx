@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE_NAME, NAV_LINKS } from "@/lib/constants";
 
 export default function Footer() {
@@ -7,9 +8,12 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="mb-3 text-lg font-bold">
-              <span className="gradient-text">{SITE_NAME}</span>
-            </h3>
+            <div className="mb-3 flex items-center gap-3">
+              <Image src="/logo.png" alt={SITE_NAME} width={36} height={36} className="rounded-lg" />
+              <h3 className="text-lg font-bold">
+                <span className="gradient-text">{SITE_NAME}</span>
+              </h3>
+            </div>
             <p className="text-sm text-muted">
               Learn to build real applications using AI-powered coding tools.
               No experience required.

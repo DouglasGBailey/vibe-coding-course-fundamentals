@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { clsx } from "clsx";
 import { NAV_LINKS, SITE_NAME } from "@/lib/constants";
@@ -15,8 +16,9 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
-        <Link href="/" className="text-xl font-bold">
-          <span className="gradient-text">{SITE_NAME}</span>
+        <Link href="/" className="flex items-center gap-3 text-xl font-bold">
+          <Image src="/logo.png" alt={SITE_NAME} width={40} height={40} className="rounded-lg" />
+          <span className="gradient-text hidden sm:inline">{SITE_NAME}</span>
         </Link>
 
         {/* Desktop nav */}
