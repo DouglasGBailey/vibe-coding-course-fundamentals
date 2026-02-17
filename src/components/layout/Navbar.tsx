@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { clsx } from "clsx";
 import { NAV_LINKS, SITE_NAME } from "@/lib/constants";
 import Button from "@/components/ui/Button";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -35,14 +36,17 @@ export default function Navbar() {
           <Button href="/pricing" size="sm">
             Get Started
           </Button>
+          <ThemeToggle />
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="flex flex-col gap-1.5 md:hidden"
-          aria-label="Toggle menu"
-        >
+        {/* Mobile: theme toggle + hamburger */}
+        <div className="flex items-center gap-3 md:hidden">
+          <ThemeToggle />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="flex flex-col gap-1.5"
+            aria-label="Toggle menu"
+          >
           <span
             className={clsx(
               "h-0.5 w-6 bg-foreground transition-all duration-200",
@@ -61,7 +65,8 @@ export default function Navbar() {
               mobileOpen && "-translate-y-2 -rotate-45"
             )}
           />
-        </button>
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}

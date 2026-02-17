@@ -20,4 +20,11 @@ export const galleryProjects: GalleryProject[] = [
     url: "https://cli-coder-training.web.app/",
     tags: ["Education", "Interactive", "Quizzes", "Responsive"],
   },
+  {
+    title: "Pets Delight Animal Shelter",
+    description:
+      "A non-profit animal shelter website with a clean, welcoming design featuring their rescue mission, organized donation needs, volunteer opportunities, and community engagement sections. Deployed to Vercel.",
+    url: "https://to-vercel-animal-shelter-example.vercel.app/",
+    tags: ["Non-Profit", "Landing Page", "Clean Design", "Vercel"],
+  },
 ];
