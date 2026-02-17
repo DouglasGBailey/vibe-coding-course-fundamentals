@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="mb-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt={SITE_NAME} width={1024} height={500} className="h-10 w-auto object-contain" />
+              <img src="/logo.png" alt={SITE_NAME} width={365} height={352} className="h-10 w-auto object-contain" />
             </div>
             <p className="text-sm text-muted">
               Learn to build real applications using AI-powered coding tools.
