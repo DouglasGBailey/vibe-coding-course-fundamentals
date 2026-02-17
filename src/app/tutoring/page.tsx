@@ -20,7 +20,7 @@ export default function TutoringPage() {
           1-on-1 Sessions
         </Badge>
         <h1 className="mx-auto mb-6 max-w-3xl text-4xl font-bold md:text-5xl">
-          Personalized <GradientText>Tutoring</GradientText> That Gets Results
+          Personalized <GradientText>Online Tutoring</GradientText> That Gets Results
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-muted">
           Work directly with an experienced instructor who will guide you
