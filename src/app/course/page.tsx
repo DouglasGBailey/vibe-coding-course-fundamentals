@@ -17,7 +17,7 @@ export default function CoursePage() {
     <>
       <Section className="py-28 text-center">
         <Badge variant="accent" className="mb-6">
-          6 Modules · 17 Hours · 30 Quizzes
+          7 Modules · 19 Hours · 35 Quizzes
         </Badge>
         <h1 className="mx-auto mb-6 max-w-3xl text-4xl font-bold md:text-5xl">
           The Complete <GradientText>Vibe Coding</GradientText> Curriculum

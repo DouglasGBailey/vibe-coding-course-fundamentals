@@ -411,4 +411,74 @@ export const quizzes: ModuleQuiz[] = [
       },
     ],
   },
+  {
+    moduleId: 7,
+    questions: [
+      {
+        id: 31,
+        question: "What is the GEMINI.md file used for?",
+        options: [
+          "It's the README for your project",
+          "A settings file that configures Gemini CLI's behaviour, code standards, and permissions for your project",
+          "A log file that records all AI-generated code",
+          "A licence file required by Google",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "GEMINI.md is a project-level configuration file where you define code quality standards, file operation permissions, auto-approved commands, and workflow preferences. Gemini CLI reads it to tailor its behaviour to your project.",
+      },
+      {
+        id: 32,
+        question: "Why should you configure 'restricted operations' like never using rm or mv commands?",
+        options: [
+          "To make Gemini CLI run faster",
+          "To prevent accidental data loss by blocking destructive file operations",
+          "Because rm and mv don't work on modern systems",
+          "It's only needed for Python projects",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "Restricting destructive commands like rm (delete) and mv (move/rename) in your settings prevents the AI from accidentally deleting or misplacing important files. This is a safety guardrail that protects your work while still allowing full editing flexibility.",
+      },
+      {
+        id: 33,
+        question: "What are 'auto-approved bash commands' in GEMINI.md?",
+        options: [
+          "Commands that bypass your computer's security entirely",
+          "A list of shell commands Gemini CLI can run without asking for permission each time",
+          "Commands that automatically fix bugs in your code",
+          "Bash scripts that run when your computer starts up",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "Auto-approved commands (like curl, python, pip install, etc.) let Gemini CLI execute common, safe operations without prompting you each time. This speeds up your workflow while still blocking potentially dangerous commands that aren't on the list.",
+      },
+      {
+        id: 34,
+        question: "What is the purpose of the development-status.md file?",
+        options: [
+          "It replaces version control like Git",
+          "It tracks project state, recent changes, known issues, and next steps so any future session can pick up where you left off",
+          "It's a changelog published to npm",
+          "It stores database connection strings",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "development-status.md is a living document that records what's working, what's in progress, architecture decisions, known issues, and priorities. It provides critical context for continuity — whether you're starting a new AI session or handing off to a collaborator.",
+      },
+      {
+        id: 35,
+        question: "Which code quality setting helps catch bugs before they reach production?",
+        options: [
+          "Using dark mode in your editor",
+          "Enforcing TypeScript for type safety and including comprehensive error handling",
+          "Writing code as fast as possible",
+          "Avoiding all third-party libraries",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "Configuring Gemini CLI to use TypeScript and include comprehensive error handling means the AI generates safer, more predictable code. TypeScript catches type mismatches at build time, and error handling ensures your app fails gracefully instead of crashing.",
+      },
+    ],
+  },
 ];

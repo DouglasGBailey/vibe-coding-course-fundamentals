@@ -14,8 +14,8 @@ export default function CurriculumSection() {
           The <GradientText>Curriculum</GradientText>
         </h2>
         <p className="mx-auto max-w-2xl text-muted">
-          6 comprehensive modules taking you from zero coding knowledge to
-          building and deploying real web applications with AI assistance.
+          7 comprehensive modules taking you from zero coding knowledge to
+          building, deploying, and configuring professional AI workflows.
         </p>
       </div>
 

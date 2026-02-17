@@ -91,4 +91,19 @@ export const modules: Module[] = [
     duration: "3 hours",
     icon: "🌐",
   },
+  {
+    id: 7,
+    title: "Configuring Gemini CLI Settings",
+    description:
+      "Learn to configure Gemini CLI for professional workflows. Set up code quality standards, file operation permissions, auto-approved commands, and development status tracking to work faster and safer.",
+    topics: [
+      "The GEMINI.md settings file: structure and purpose",
+      "Code quality standards and TypeScript best practices",
+      "File operation permissions: auto-accept edits and restricted commands",
+      "Auto-approved bash commands for safe automation",
+      "Development status tracking with development-status.md",
+    ],
+    duration: "2 hours",
+    icon: "⚙️",
+  },
 ];

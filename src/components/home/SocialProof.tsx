@@ -3,8 +3,8 @@ import Section from "@/components/ui/Section";
 const stats = [
   { value: "500+", label: "Students Enrolled" },
   { value: "4.9/5", label: "Average Rating" },
-  { value: "30", label: "Interactive Quizzes" },
-  { value: "6", label: "Comprehensive Modules" },
+  { value: "35", label: "Interactive Quizzes" },
+  { value: "7", label: "Comprehensive Modules" },
 ];
 
 export default function SocialProof() {
