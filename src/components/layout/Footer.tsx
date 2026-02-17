@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { SITE_NAME, NAV_LINKS } from "@/lib/constants";
 
 export default function Footer() {
@@ -9,7 +8,8 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <div className="mb-3 flex items-center gap-3">
-              <Image src="/logo.png" alt={SITE_NAME} width={180} height={180} className="rounded-lg" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo.png" alt={SITE_NAME} className="h-16 w-16 rounded-lg" />
               <h3 className="text-lg font-bold">
                 <span className="gradient-text">{SITE_NAME}</span>
               </h3>
