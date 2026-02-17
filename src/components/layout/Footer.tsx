@@ -7,12 +7,9 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <div className="mb-3 flex items-center gap-3">
+            <div className="mb-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt={SITE_NAME} className="h-16 w-16 rounded-lg" />
-              <h3 className="text-lg font-bold">
-                <span className="gradient-text">{SITE_NAME}</span>
-              </h3>
+              <img src="/logo.png" alt={SITE_NAME} className="h-10 w-auto rounded-lg" />
             </div>
             <p className="text-sm text-muted">
               Learn to build real applications using AI-powered coding tools.

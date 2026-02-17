@@ -17,8 +17,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
         <Link href="/" className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt={SITE_NAME} className="h-16 w-16 rounded-lg md:h-20 md:w-20" />
-          <span className="gradient-text hidden text-xl font-bold sm:inline md:text-2xl">{SITE_NAME}</span>
+          <img src="/logo.png" alt={SITE_NAME} className="h-12 w-auto rounded-lg md:h-16" />
         </Link>
 
         {/* Desktop nav */}
